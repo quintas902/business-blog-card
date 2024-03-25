@@ -1,0 +1,84 @@
+:root {
+    --color-light-gray: #F2F5F9;
+    --color-white: #FFFFFF;
+    --color-dark-blue: #111729;
+    --color-gray: #677489;
+    --font-primary: 'Lato', sans-serif;
+    --font-secunday: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-light-gray);
+}
+
+h1 {
+    font-family: var(--font-secunday);
+    font-size: 1.5rem;
+    color: var(--color-dark-blue);
+}
+
+p {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--color-gray);
+    font-weight: 100;
+}
+
+.container {
+    position: relative;
+    max-width: 364px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--color-light-gray);
+    background-color: var(--color-white);    
+    margin-top: 25vh;
+    min-height: 520px;
+}
+
+.card {
+    position: absolute;
+    /* height: 480px; */
+    top: 250px;
+    border-radius: 15px 15px 0 0;
+}
+
+.main__card-header {
+    position: absolute;    
+    top: -250px;
+    height: 420px;
+    clip-path: polygon(100% 0%, 0% 0% , 0% 52.04%, 1% 52.03%, 2% 52.01%, 3% 51.97%, 4% 51.91%, 5% 51.84%, 6% 51.76%, 7% 51.66%, 8% 51.55%, 9% 51.42%, 10% 51.28%, 11% 51.13%, 12% 50.96%, 13% 50.78%, 14% 50.58%, 15% 50.38%, 16% 50.16%, 17% 49.93%, 18% 49.69%, 19% 49.44%, 20% 49.18%, 21% 48.92%, 22% 48.64%, 23% 48.36%, 24% 48.07%, 25% 47.77%, 26% 47.47%, 27% 47.16%, 28% 46.85%, 29% 46.53%, 30% 46.21%, 31% 45.89%, 32% 45.57%, 33% 45.24%, 34% 44.92%, 35% 44.60%, 36% 44.28%, 37% 43.96%, 38% 43.64%, 39% 43.33%, 40% 43.02%, 41% 42.72%, 42% 42.42%, 43% 42.13%, 44% 41.85%, 45% 41.57%, 46% 41.31%, 47% 41.05%, 48% 40.80%, 49% 40.56%, 50% 40.33%, 51% 40.12%, 52% 39.91%, 53% 39.72%, 54% 39.54%, 55% 39.37%, 56% 39.21%, 57% 39.07%, 58% 38.94%, 59% 38.83%, 60% 38.73%, 61% 38.65%, 62% 38.58%, 63% 38.53%, 64% 38.49%, 65% 38.47%, 66% 38.46%, 67% 38.47%, 68% 38.49%, 69% 38.53%, 70% 38.59%, 71% 38.66%, 72% 38.74%, 73% 38.84%, 74% 38.95%, 75% 39.08%, 76% 39.22%, 77% 39.38%, 78% 39.54%, 79% 39.73%, 80% 39.92%, 81% 40.13%, 82% 40.34%, 83% 40.57%, 84% 40.81%, 85% 41.06%, 86% 41.32%, 87% 41.59%, 88% 41.87%, 89% 42.15%, 90% 42.44%, 91% 42.74%, 92% 43.04%, 93% 43.35%, 94% 43.66%, 95% 43.98%, 96% 44.30%, 97% 44.62%, 98% 44.94%, 99% 45.26%, 100% 45.58%);
+}
+
+.main__card-header > img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;        
+}
+
+.main__card-tittle, .main__card-body, .main__card-footer {
+    padding: 0 25px;    
+}
+
+.main__card-footer {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-top: 1px solid var(--color-light-gray);
+}
+    .main__card-footer p {
+        line-height: 5px;
+    }
+    .footer--avatar > img {
+        width: 50px;
+        border-radius: 100%;
+    }
+    .footer--title {
+        font-weight: 400;
+    }
+    .footer--subtitle {
+        font-size: 12px;
+    }
